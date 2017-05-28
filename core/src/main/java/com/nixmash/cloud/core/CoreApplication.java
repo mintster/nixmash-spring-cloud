@@ -1,14 +1,15 @@
 package com.nixmash.cloud.core;
 
-import com.nixmash.cloud.core.config.CoreConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
+@PropertySource("classpath:core.properties")
 public class CoreApplication {
 
     public static void main(String[] args) {
-		SpringApplication.run(CoreConfig.class, args);
+		SpringApplication.run(CoreApplication.class, args);
 	}
 
 //        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
