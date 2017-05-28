@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.io.Serializable;
 
 @Component
-@PropertySource("file:${blog.properties.file.path}${blog.properties.file.basename}.properties")
+@PropertySource("file:${HOME}/web/nixmash/blog.properties")
 @ConfigurationProperties(prefix = "blog")
 public class ApplicationSettings implements Serializable {
 

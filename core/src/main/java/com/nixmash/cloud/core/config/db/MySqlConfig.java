@@ -43,7 +43,7 @@ public class MySqlConfig  {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(
             EntityManagerFactoryBuilder factory) {
         return factory.dataSource(dataSource())
-                .packages("com.nixmash.blog.jpa")
+                .packages("com.nixmash.cloud.core.model")
                 .properties(getVendorProperties(dataSource()))
                 .build();
     }

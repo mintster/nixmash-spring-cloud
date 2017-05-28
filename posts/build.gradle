@@ -1,0 +1,24 @@
+jar {
+	baseName = 'posts'
+}
+
+dependencies {
+	compile project(':core')
+
+	compile 'org.springframework.cloud:spring-cloud-starter-config'
+	compile 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+//	compile 'org.springframework.cloud:spring-cloud-starter-zipkin'
+//    compile 'org.springframework.cloud:spring-cloud-sleuth-stream'
+//	compile 'org.springframework.boot:spring-boot-starter-aop'
+//	compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.springframework.boot:spring-boot-starter-data-rest'
+
+}
+
+bootRun {
+	addResources = false
+	systemProperty 'spring.profiles.active', 'mysql'
+	main = 'com.nixmash.cloud.posts.PostsApplication'
+}

@@ -57,10 +57,10 @@
      @Column(name = "post_image", length = MAX_POST_NAME_LENGTH)
      private String postImage;
 
-     @Column(name = "post_date", nullable = false)
+     @Column(name = "post_date", nullable = false, columnDefinition = "TIMESTAMP")
      private ZonedDateTime postDate;
 
-     @Column(name = "post_modified", nullable = false)
+     @Column(name = "post_modified", nullable = false, columnDefinition = "TIMESTAMP")
      private ZonedDateTime postModified;
 
      @Column(name = "post_type", nullable = false, length = 20)
