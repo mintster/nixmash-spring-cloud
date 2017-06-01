@@ -25,3 +25,7 @@ gradle core:build
 
 printHeader "POSTS"
 gradle posts:build
+
+printHeader "EUREKA"
+gradle eureka:build
+

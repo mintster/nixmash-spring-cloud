@@ -1,6 +1,6 @@
  package com.nixmash.cloud.core.model;
 
- import com.fasterxml.jackson.annotation.JsonFormat;
+ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
  import com.nixmash.cloud.core.enums.PostDisplayType;
  import com.nixmash.cloud.core.enums.PostType;
  import com.nixmash.cloud.core.utils.PostUtils;

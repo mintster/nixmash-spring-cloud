@@ -16,7 +16,8 @@ NixMash Cloud consists of the following Modules:
  
  ### nixmashcloud-v0.1.0 - Initial Layout and Structure (in progress)
  
- - *coming...*
+ - [NixMash Post: Consuming REST HAL-formatted JSON with Spring RestTemplate](http://nixmash.com/post/consuming-rest-hal-formatted-json-with-spring-resttemplate)
+ - [NixMash Post: Customizing REST Output with Spring Projections](http://nixmash.com/post/customizing-rest-output-with-spring-projections)
  
  ## Installation
  
@@ -24,7 +25,7 @@ NixMash Cloud consists of the following Modules:
  
  NixMash Cloud is configured for **MySQL** and **H2.** Spring Profiles are "mysql" and "h2" respectively. A setup script is provided in `/install/sql/mysqlsetup.sql` for MySQL, but currently includes no data. Data is included when using H2 for testing purposes. MySQL Configuration is located in `/core/src/main/resources/db/mysql.properties` or configurable as runtime arguments.
  
- Spring Cloud uses a Git Configuration directory to house the various Cloud `.properties` files. The Configuration Directory used for NixMash Cloud is found in my [nixmash-cloud-config repository.](https://github.com/mintster/nixmash-cloud-config) Change the location of the directory in your Config Server `application.properties` or Module `bootstrap.properties` files.
+ Spring Cloud uses a Git Configuration directory to house the various Cloud `.properties` files. The Configuration Directory used for NixMash Cloud is found in the GitHub repository [nixmash-cloud-config.](https://github.com/mintster/nixmash-cloud-config) Change the location of the directory in your Config Server `application.properties` and module `bootstrap.properties` files.
  
  ## To Run
  

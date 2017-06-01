@@ -1,7 +1,6 @@
 package com.nixmash.cloud.posts.controller;
 
 import com.nixmash.cloud.core.dto.PostDTO;
-import com.nixmash.cloud.core.model.Post;
 import com.nixmash.cloud.posts.service.PostService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,14 +19,14 @@ public class PostRestController {
         this.postService = postService;
     }
 
+//    @GetMapping("/posts")
+//    public List<Post> getPosts() {
+//        return postService.getRecentPosts();
+//    }
+
     @GetMapping("/postdtos")
     public List<PostDTO> getRecentPosts() {
         return postService.getRecentPostDTOs();
-    }
-
-    @GetMapping("/posters")
-    public List<Post> getRecentPosters() {
-        return postService.getRecentPosts();
     }
 
 }
