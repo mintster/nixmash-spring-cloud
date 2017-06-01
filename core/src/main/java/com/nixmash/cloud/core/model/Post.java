@@ -1,5 +1,6 @@
  package com.nixmash.cloud.core.model;
 
+ import com.fasterxml.jackson.annotation.JsonFormat;
  import com.nixmash.cloud.core.enums.PostDisplayType;
  import com.nixmash.cloud.core.enums.PostType;
  import com.nixmash.cloud.core.utils.PostUtils;
@@ -34,6 +35,9 @@
      public static final int MAX_POST_TITLE_LENGTH = 200;
      public static final int MAX_POST_NAME_LENGTH = 200;
      public static final int MIN_POST_CONTENT_LENGTH = 20;
+
+     public Post() {
+     }
 
      // region properties
 

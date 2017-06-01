@@ -405,6 +405,11 @@ public class PostDTO implements Serializable {
             return this;
         }
 
+        public Builder postCreateDate(ZonedDateTime createDate) {
+            built.postDate = createDate;
+            return this;
+        }
+
         public PostDTO build() {
             return built;
         }

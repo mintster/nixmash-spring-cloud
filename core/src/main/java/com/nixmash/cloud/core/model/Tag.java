@@ -1,5 +1,7 @@
 package com.nixmash.cloud.core.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
@@ -60,7 +62,8 @@ public class Tag implements Serializable {
         this.tagValue = tagValue;
     }
 
-    @ManyToMany(mappedBy = "tags")
+    @JsonIgnore
+    @ManyToMany(mappedBy = "tags", fetch = FetchType.EAGER)
     public Set<Post> getPosts() {
         return posts;
     }

@@ -67,6 +67,7 @@ public class PostUtils {
                 .postSource(post.getPostSource())
                 .postImage(post.getPostImage())
                 .postId(post.getPostId())
+                .postCreateDate(post.getPostDate())
                 .tags(tagsToTagDTOs(post.getTags()))
                 .build();
     }

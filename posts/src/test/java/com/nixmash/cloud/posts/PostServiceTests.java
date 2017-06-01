@@ -10,21 +10,23 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.greaterThan;
+
 /**
  * Created by daveburke on 5/28/17.
  */
 @RunWith(SpringRunner.class)
 @Transactional
-public class ServiceTests extends PostsApplicationTests{
+public class PostServiceTests extends AbstractContext {
 
     @Autowired
     private PostService postService;
 
     @Test
     public void getRecentPostsTest() throws Exception {
-
         List<Post> posts = postService.getRecentPosts();
-        posts.forEach(p -> System.out.println(p.getPostTitle()));
+        assertThat(posts.size(), greaterThan(0));
     }
 
 }

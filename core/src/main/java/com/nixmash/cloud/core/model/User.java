@@ -1,5 +1,6 @@
 package com.nixmash.cloud.core.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.nixmash.cloud.core.enums.Role;
 import com.nixmash.cloud.core.enums.SignInProvider;
 import com.nixmash.cloud.core.validators.ExtendedEmailValidator;
@@ -59,6 +60,7 @@ public class User implements UserDetails, Serializable {
     @Column
     @NotEmpty
     @Length(min=MIN_LENGTH_PASSWORD)
+    @JsonIgnore
     private String password;
 
     @Basic
