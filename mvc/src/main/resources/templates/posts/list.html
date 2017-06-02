@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:include="fragments/head :: head" th:remove="tag">[Global Header]</div>
+    <title th:text="#{posts.list.page.title}">[NixMash Cloud Posts Page]</title>
+</head>
+<body>
+<nav th:replace="fragments/navbar :: navbar('posts')">Navbar</nav>
+<div class="container">
+    <div th:with="heading=#{posts.list.page.header}, subheading=#{posts.list.page.subheader}" th:remove="tag">
+        <div th:replace="fragments/banner :: banner(${heading}, ${subheading})">
+        </div>
+    </div>
+</div>
+
+<div class="container bs-container">
+    <div class="row">
+        <div class="bs-section">
+            <em>Coming...</em>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

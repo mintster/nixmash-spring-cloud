@@ -5,15 +5,21 @@ jar {
 dependencies {
     compile project(':core')
 
+    compile 'org.springframework.boot:spring-boot-devtools'
     compile 'org.springframework.cloud:spring-cloud-starter-config'
     compile 'org.springframework.cloud:spring-cloud-starter-eureka'
     compile 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
-    compile 'org.springframework.boot:spring-boot-starter-aop'
     compile 'org.springframework.cloud:spring-cloud-starter-feign'
     compile 'org.springframework.cloud:spring-cloud-starter-zuul'
-    compile 'org.springframework.boot:spring-boot-starter-hateoas'
+
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-data-rest'
 
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile 'org.webjars:jquery:3.2.1'
+    compile 'org.webjars:bootstrap:3.3.7-1'
+    compile 'org.webjars:bootswatch:3.3.7'
+    compile 'org.webjars:jquery-ui:1.12.1'
+    compile 'org.webjars:jquery-ui-themes:1.12.1'
 }
 

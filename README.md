@@ -10,7 +10,9 @@ NixMash Cloud consists of the following Modules:
 - **Spring Cloud Config Server**
 - **CORE** Module with shared Domain objects and log
 - **POSTS** Posts Service Module
-- *Eureka, Zipkin, other Cloud and Client modules in development*
+- **EUREKA** Eureka Discovery Service Module
+- **MVC** Web Client Application
+- *Zipkin and other Cloud modules in development*
  
  ## NixMash Post List by Branch
  
@@ -29,16 +31,24 @@ NixMash Cloud consists of the following Modules:
  
  ## To Run
  
- To run NixMash Cloud in your IDE first launch **Config Server** then **Posts Service.**
+ To run NixMash Cloud in your IDE launch the following in order: 
  
- - Posts List: http://localhost:8000/posts *(will initially be empty in mysql)*
+1. **Config Server** 
+2. **Eureka Service**
+3. **Posts Service**
+4. **MVC Client Web Application**
+ 
+- Posts List: http://localhost:8000/posts *(will initially be empty in mysql)*
+- Edge REST retrieval of same: http://localhost:8001/post-service/posts
  
  *MORE AS IT COMES ONLINE....*
  
  To run in Gradle:
  
  ```bash
- $ gradle config:clean clean:bootRun
+ $ gradle config:clean config:bootRun
+ $ gradle eureka:clean eureka:bootRun
  $ gradle posts:clean posts:bootRun
+ $ gradle mvc:clean mvc:bootRun
  ```
  
