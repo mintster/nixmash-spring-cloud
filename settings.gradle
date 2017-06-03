@@ -1,3 +1,6 @@
-include "core", "config", "posts", "eureka"
+include 'core'
+include 'config'
+include 'posts'
+include 'eureka'
 include 'mvc'
 

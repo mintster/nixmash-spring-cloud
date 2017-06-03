@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:include="fragments/head :: head" th:remove="tag">[Global Header]</div>
+    <title th:text="#{home.page.title}">[NixMash Cloud Home Page]</title>
+</head>
+<body>
+<nav th:replace="fragments/navbar :: navbar('home')">Navbar</nav>
+<div th:replace="fragments/home :: .jumbotron">Home Page Jumbotron</div>
+<nav th:replace="fragments/home :: posts">Navbar</nav>
+
+<div th:include="fragments/scripts :: [id='scripts']" th:remove="tag">Scripts</div>
+</body>
+</html>

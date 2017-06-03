@@ -12,13 +12,4 @@ public class CoreApplication {
 		SpringApplication.run(CoreApplication.class, args);
 	}
 
-//        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-//        ctx.register(CoreConfig.class);
-//        ctx.refresh();
-//        System.out.println("Spring Framework Version: " + SpringVersion.getVersion());
-//        System.out.println("Spring Boot Version: " + SpringBootVersion.getVersion());
-////        JpaUI ui = ctx.getBean(JpaUI.class);
-////        ui.init();
-//        ctx.close();
-//    }
 }
