@@ -29,3 +29,6 @@ gradle posts:build
 printHeader "EUREKA"
 gradle eureka:build
 
+printHeader "MVC"
+gradle mvc:build
+

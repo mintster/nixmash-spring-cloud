@@ -4,7 +4,6 @@ import com.nixmash.cloud.core.model.Post;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.hateoas.PagedResources;
@@ -48,7 +47,6 @@ public class PostRestTests extends AbstractContext {
 
     @Before
     public void setUp() {
-        MockitoAnnotations.initMocks(this);
         this.mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).dispatchOptions(true).build();
     }
 

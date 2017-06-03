@@ -12,7 +12,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = {CoreConfig.class, PostsConfig.class })
+@ContextConfiguration(classes = {CoreConfig.class, PostsConfig.class, PostsApplication.class })
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @ActiveProfiles(SpringProfile.H2)
 @TestPropertySource("classpath:test.properties")
