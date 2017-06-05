@@ -19,11 +19,6 @@ public class PostRestController {
         this.postService = postService;
     }
 
-//    @GetMapping("/posts")
-//    public List<Post> getPosts() {
-//        return postService.getRecentPosts();
-//    }
-
     @GetMapping("/postdtos")
     public List<PostDTO> getRecentPosts() {
         return postService.getRecentPostDTOs();

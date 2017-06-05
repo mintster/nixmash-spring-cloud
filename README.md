@@ -7,7 +7,7 @@ A Spring Cloud application with NixMash Blog Tutorials at [http://nixmash.com](h
 
 NixMash Cloud consists of the following Modules:
 
-- **Spring Cloud Config Server**
+- **CONFIG** Spring Cloud Config Server
 - **CORE** Module with shared Domain objects and log
 - **POSTS** Posts Service Module
 - **EUREKA** Eureka Discovery Service Module
@@ -18,6 +18,8 @@ NixMash Cloud consists of the following Modules:
  
  ### nixmashcloud-v0.1.0 - Initial Layout and Structure (in progress)
  
+ - [NixMash Post: A Spring Cloud Application Outline](http://nixmash.com/post/a-spring-cloud-application-outline)
+ - [NixMash Post: Testing a Spring Cloud Service Endpoint with @MockBean](http://nixmash.com/post/testing-a-spring-cloud-service-endpoint-with-mockbean)
  - [NixMash Post: Consuming REST HAL-formatted JSON with Spring RestTemplate](http://nixmash.com/post/consuming-rest-hal-formatted-json-with-spring-resttemplate)
  - [NixMash Post: Customizing REST Output with Spring Projections](http://nixmash.com/post/customizing-rest-output-with-spring-projections)
  

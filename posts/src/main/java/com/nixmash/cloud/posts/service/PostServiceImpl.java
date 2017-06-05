@@ -37,12 +37,6 @@ public class PostServiceImpl implements PostService {
         return postsToPostDTOs(recentPosts);
     }
 
-    @Transactional(readOnly = true)
-    @Override
-    public List<Post> getRecentPosts() {
-        return postRepository.findFirst10ByOrderByPostDateDesc(sortByPostDateDesc());
-    }
-
     // endregion
 
     // region Sorters

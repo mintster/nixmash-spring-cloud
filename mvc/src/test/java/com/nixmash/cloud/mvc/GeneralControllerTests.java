@@ -29,20 +29,19 @@ public class GeneralControllerTests  extends AbstractContext {
 
     // region Beans
 
+    private MockMvc mockMvc;
+
     @Autowired
     private WebUI webUI;
 
     @MockBean
     private PostReader postReader;
 
-    private GeneralController generalController;
-    private MockMvc mockMvc;
-
     // endregion
 
     @Before
     public void setUp() {
-        generalController = new GeneralController(webUI, postReader);
+        GeneralController generalController = new GeneralController(webUI, postReader);
         mockMvc = MockMvcBuilders.standaloneSetup(generalController).build();
 
         Resources<Post> posts = new Resources<>(new ArrayList<>());

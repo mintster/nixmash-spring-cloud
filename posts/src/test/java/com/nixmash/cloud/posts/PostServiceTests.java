@@ -1,6 +1,6 @@
 package com.nixmash.cloud.posts;
 
-import com.nixmash.cloud.core.model.Post;
+import com.nixmash.cloud.core.dto.PostDTO;
 import com.nixmash.cloud.posts.service.PostService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,8 +24,8 @@ public class PostServiceTests extends AbstractContext {
     private PostService postService;
 
     @Test
-    public void getRecentPostsTest() throws Exception {
-        List<Post> posts = postService.getRecentPosts();
+    public void getRecentPostDTOsTest() throws Exception {
+        List<PostDTO> posts = postService.getRecentPostDTOs();
         assertThat(posts.size(), greaterThan(0));
     }
 

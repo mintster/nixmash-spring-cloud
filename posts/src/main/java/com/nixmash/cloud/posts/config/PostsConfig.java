@@ -1,9 +1,7 @@
 package com.nixmash.cloud.posts.config;
 
-import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -19,10 +17,8 @@ import java.util.List;
  * Created by daveburke on 5/28/17.
  */
 
-@EnableRabbit
 @Configuration
 @EnableTransactionManagement
-@EnableConfigurationProperties
 @ComponentScan(basePackages = {"com.nixmash.cloud.posts", "com.nixmash.cloud.core"})
 @EnableJpaRepositories(basePackages = "com.nixmash.cloud.posts.repository")
 public class PostsConfig {

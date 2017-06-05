@@ -17,8 +17,6 @@ public class GeneralController {
 
     // endregion
 
-    // region Beans
-
     private final WebUI webUI;
     private final PostReader postReader;
 
@@ -26,8 +24,6 @@ public class GeneralController {
         this.webUI = webUI;
         this.postReader = postReader;
     }
-
-    // endregion
 
     @GetMapping(value = "/")
     public String home(Model model) {

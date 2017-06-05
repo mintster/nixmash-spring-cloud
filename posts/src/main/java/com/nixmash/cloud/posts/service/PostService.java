@@ -14,8 +14,5 @@ public interface PostService {
     @Transactional(readOnly = true)
     List<PostDTO> getRecentPostDTOs();
 
-    @Transactional(readOnly = true)
-    List<Post> getRecentPosts();
-
     List<PostDTO> postsToPostDTOs(List<Post> posts);
 }

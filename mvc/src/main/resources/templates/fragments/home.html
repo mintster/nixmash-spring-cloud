@@ -4,7 +4,7 @@
     <div class="container">
         <!--/*@thymesVar id="post" type="com.nixmash.cloud.core.model.Post"*/-->
         <div th:if="${posts}" th:remove="tag">
-            <h2>Recent Posts and Linkers</h2>
+            <h2>Recent Posts and Links</h2>
             <div class="home-post-blockquote">
                 <blockquote>
                     <small th:each="post : ${posts}">

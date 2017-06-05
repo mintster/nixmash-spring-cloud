@@ -5,13 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.integration.annotation.IntegrationComponentScan;
 
 @EnableZuulProxy
 @EnableDiscoveryClient
 @EnableFeignClients
-@EnableAspectJAutoProxy(proxyTargetClass = true)
 @IntegrationComponentScan
 @SpringBootApplication
 public class MvcApplication {
